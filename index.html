@@ -121,7 +121,32 @@ var _hmt = _hmt || [];
     <section class="services-section" id="section-1">
 
       <div class="container">
-
+<div class="row">
+            <form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+              <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+                <a href="https://www.baidu.com/" target="_blank">
+                    <img src="https://www.baidu.com/img/baidu_jgylogo3.gif" alt="Baidu" align="bottom" border="0">
+                </a>
+                <input type="text"  onfocus="checkHttps" name="word"  size="30">
+                <input type="submit"value="百度搜索">
+            </form>
+            <script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+            <script>
+                function checkHttps () {
+                    BaiduHttps.useHttps();    
+                };
+                function baiduWithHttps (formname) {
+                    var data = BaiduHttps.useHttps();
+                    if (data.s === 0) {
+                        return true;
+                    }
+                    else {
+                        formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+                        return true;
+                    }
+                };
+            </script>
+        </div>
         <div class="row">
 
           <div class="col-md-4 col-services features-content">
@@ -132,15 +157,15 @@ var _hmt = _hmt || [];
             </figure>
 
             <!-- Title -->
-            <h4>2016-03-06 6.6.0</h4>
+            <h4>2016-03-07 6.6.1</h4>
 
             <!-- Description -->
             
               <p>1. 优化每日一句功能，支持copy，截图，分享功能。</p>
               <p>2. 解决2048游戏中的声音重复播放问题。</p>
-              <p>3. 更新单词测试功能，选择错误是用不同的颜色标记错误和正确答案。</p>
+              <p>3. 更新单词测试功能，选择错误时用不同的颜色标记错误和正确答案。</p>
               <p>4. 更新单词详情页截图功能，截图之后，下次直接可以打开。</p>
-              <p>5. apk减小包大小，字体才有插件功能加载。</p>
+              <p>5. apk减小包大小，字体采用插件功能加载。</p>
               <p>6. 新增状态栏显示/隐藏开关。</p>
               <p>7. 新增默认tab设置功能。</p>
 
@@ -194,9 +219,6 @@ var _hmt = _hmt || [];
       </div> <!-- /.container -->
       
     </section> <!-- /.services-section -->
-
-
-
 
     <!-- Features -->
     <section class="features-section" id="section-2">
@@ -336,7 +358,6 @@ var _hmt = _hmt || [];
 
                   <!-- Button -->
                   <button class="btn btn-success" type="submit">Subscribe</button>
-                  
                 </form> <!-- /.subscribe-form -->
                 
               </div> <!-- /.col-md-6 -->
@@ -346,6 +367,7 @@ var _hmt = _hmt || [];
           </div> <!-- /.col-md-12 -->
           
         </div> <!-- /.row -->
+
 
       </div> <!-- /.container -->
 
@@ -358,7 +380,32 @@ var _hmt = _hmt || [];
     <footer class="footer-section" role="contentinfo">
 
       <div class="container">
-
+        <div class="row">
+            <form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+              <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+                <a href="https://www.baidu.com/" target="_blank">
+                    <img src="https://www.baidu.com/img/baidu_jgylogo3.gif" alt="Baidu" align="bottom" border="0">
+                </a>
+                <input type="text"  onfocus="checkHttps" name="word"  size="30">
+                <input type="submit"value="百度搜索">
+            </form>
+            <script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+            <script>
+                function checkHttps () {
+                    BaiduHttps.useHttps();    
+                };
+                function baiduWithHttps (formname) {
+                    var data = BaiduHttps.useHttps();
+                    if (data.s === 0) {
+                        return true;
+                    }
+                    else {
+                        formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+                        return true;
+                    }
+                };
+            </script>
+        </div>
         <div class="row">
 
           <div class="col-md-4 col-footer">
